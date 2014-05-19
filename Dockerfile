@@ -3,13 +3,15 @@
 # Based on Ubuntu Image
 # Based on Digital Ocean Post 
 # https://www.digitalocean.com/community/articles/docker-explained-how-to-create-docker-containers-running-memcached
+# 
+# forked from https://github.com/borjaburgos/docker-memcached
 ############################################################
 
 # Set the base image to use to Ubuntu
-FROM ubuntu
+FROM ubuntu:14.04
 
 # Set the file maintainer (your name - the file's author)
-MAINTAINER Borja Burgos <borja@tutum.co>
+MAINTAINER aldi <kriwil@gmail.com>
 
 # Update the default application repository sources list
 RUN apt-get update
